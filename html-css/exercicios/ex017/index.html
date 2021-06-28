@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /* Medidas absolutas:
+            cm, mm, in[polegada], px, pt, pc */
+
+            /* Medidas relativas:
+            em, ex, rem, vw, vh, % 
+            USAR: px e em
+
+            16px = 1em
+            */
+            font-size: 1em;
+        }
+
+        h1 {
+            /* Shorthand font
+            font-family:'Times New Roman', Times, serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style:italic;
+            parâmetros: font-style -> font-weight -> font-size -> font-family
+             */
+             font: italic bolder 3em 'Times New Roman', Times, serif;
+        }
+
+        h2 {
+            font: bold 5em monospace;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident rem eligendi dolorum ducimus delectus suscipit distinctio quo ratione, est nulla earum neque sapiente ex. Autem nam rerum explicabo animi nemo.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, ipsam et aliquam dolores architecto saepe mollitia consectetur sit nemo error dolorum assumenda debitis, minima magni nulla quae aspernatur fugit deserunt.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem reiciendis explicabo, accusantium numquam nemo eos in! Magni deleniti accusantium ea, eius sit quibusdam saepe dolorem similique fuga unde, repellendus odit.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quos repellendus est iure, consequatur quas sapiente facilis accusantium, atque deserunt quisquam. Quibusdam magnam, laudantium harum iusto ut exercitationem perferendis corrupti.</p>
+    <h2>Subtítulo 1</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati inventore mollitia amet culpa quis consequuntur tenetur quidem nemo ducimus, non doloribus harum. Quasi dignissimos pariatur aspernatur reiciendis porro molestias delectus?</p>
+</body>
+</html>

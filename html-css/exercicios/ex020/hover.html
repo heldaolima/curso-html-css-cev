@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {
+            display: block;
+            color: white;
+            background-color: red;
+            width: 300px;
+        } 
+
+        a {
+            text-decoration: none;
+        }
+
+        div:hover {
+            /* color: red; */
+            text-decoration: underline;
+        }
+
+        #caixa {
+            background-color: darkgoldenrod;
+            text-align: center;
+            padding: 50px;
+            color: white;
+        }
+
+        #caixa:hover {
+            background-color: green;
+        }
+
+        #escondido {
+            display: none;
+            background-color:darkmagenta;
+            color: white;
+            padding: 20px;
+        }
+
+        #ach:hover > p{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-classes</h1>
+    <h2>Exemplo de hover</h2>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        Passe o mouse aqui
+        <p>TEXTO ESCONDIDO...</p>
+    </div>
+    <p>Fim do exemplo</p>
+
+    <h2>Outro exemplo de pseudoclass</h2>
+    <a href="https://www.youtube.com/watch?v=WPtRX4n0UJs&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=21" target="_blank">Olha o video do Guanabara</a>
+    <div id="caixa">Passe o mouse aqui</div>
+    <div id="ach">Hover over me to show the p element
+        <p id="escondido">Achooou</p>
+    </div>
+    <h2>First Child</h2>
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title> <!--Divs semânticas-->
+    <style>
+        body {
+            background-color: dimgray;
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+            margin: 5px;
+        }
+
+        nav {
+            background-color: rgb(58, 57, 57);
+            padding: 3px;
+            box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.418);
+        }
+
+        nav a {
+            margin: 50px;
+            text-decoration: none;
+            color: white;
+        }
+
+        main {
+            background-color: white;
+            text-align: justify;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 10px 0px;
+            box-shadow: 4px 4px 9px 0px black;
+        }
+
+        article {
+            font-style: italic;
+        }
+
+        article aside {
+            font-style:normal;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        #autor {
+            color: white;
+            padding: 5px;
+            background-color: firebrick;
+        }
+
+        #bola {
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            margin: auto;
+            margin-top: 50px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+
+    </header>
+    <main>
+        <article>
+            <h2>Notícia sobre o Brasil</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum blanditiis eius minima eum incidunt maiores sapiente, repudiandae tempore. Distinctio ullam quos deserunt architecto at fuga id inventore maxime error explicabo? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit, adipisci animi asperiores odio non doloremque, error suscipit labore quae sint nihil eaque? Deleniti aperiam ipsa consequatur quae voluptas similique minima!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto veniam sint nam provident in nihil itaque voluptas reiciendis suscipit odit repellat assumenda libero non nesciunt facere, magni ipsum incidunt quisquam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime magni deleniti iste minus quaerat voluptatum. Dicta, consequuntur quod ut necessitatibus aliquid dignissimos ipsam saepe commodi quas, repellat dolores possimus autem.
+            </p>
+            <aside>
+                <span id="autor">Artigo escrito pelo Heldão</span>
+            </aside>
+        </article>
+    </main>
+
+    <footer>
+        <p>Desenvolvido pelo Curso em Vídeo</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>
