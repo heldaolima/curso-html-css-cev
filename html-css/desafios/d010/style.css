@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 :root {
     --cor0: #c5edb6;
@@ -11,7 +12,7 @@
     --cor5: #063D1E;
     --fonte0: Arial, Helvetica, sans-serif;
     --fonte1: 'Bebas Neue', cursive;
-    --fonte2: 'iDroid', sans-serif;
+    --fonteAndroid: 'Montserrat', sans-serif;
 }
 
 * {
@@ -19,117 +20,161 @@
     padding: 0px;
 }
 
+body {
+    background-color: var(--cor2);
+    margin-top: 0px;
+    font-family: var(--fonte0);
+    margin: auto;
+}
+
 p {
-    margin: 10px;
+    margin: 15px 0px;
     text-align: justify;
     text-indent: 40px;
     line-height: 1.5em;
 }
 
-body {
-    background-color: var(--cor2);
-    margin: 0px;
-    margin-top: 0px;
-    font-family: var(--fonte0);
+.externo::after {
+    content: '\00A0\1F517';
 }
 
 header {
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor5));
+    min-height: 150px; 
     padding-top: 2em;
-    margin-top: 0px;
     color: white;
     text-align: center;
-    margin: 0px;
-    margin-bottom: 0.5em;
-    background-image: linear-gradient(to bottom, var(--cor1), var(--cor2), var(--cor3), var(--cor4));
-    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.466);
+    margin-bottom: 20px;
     box-shadow: 0px 3px 8px black;
 }
 
 header > h1 {
     font-family: var(--fonte1);
     font-weight: normal;
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.589);
 }
 
 header > p {
-    text-align: center;
     text-indent: 0px;
-    width: 370px;
+    text-align: center;
+    max-width: 600px;
+    padding-right: 10px;
+    padding-left: 10px;
     font-family: var(--fonte0);
+    font-size: 1.2em;
     margin: auto;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.589);
 }
 
 nav {
+    /* background-color: var(--cor5); */
     text-align: left;
-    padding-bottom: 10px;
+    padding: 10px;
 }
 
 nav > a {
     font-size: larger;
     font-weight: 600;
     text-decoration: none;
-    color: white;
+    color: var(--cor1);
     margin: 0.5em;
-    padding: 0.6em;
+    padding: 10px;
     transition: background-color .5s;
+    border-radius: 5px;
 }
 
 nav > a:hover {
     background-color: var(--cor2);
+    color: var(--cor5)
 }
 
 main {
     background-color: white;
-    width: 70%;
-    margin: auto;
     padding: 1em;
-    box-shadow: 0px 0px 10px 0px black;
-    
-}
-
-article > h2 {
-    font-family: var(--fonte2);
-    font-size: 2em;
-    color: var(--cor4)
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.493);
+    max-width: 1000px;
+    min-width: 300px;
+    margin: auto;
+    margin-bottom: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .titulo_android {
-    font-family: var(--fonte2);
+    font-size: 1.5em;
+    font-family: var(--fonteAndroid);
     color: var(--cor4);
-    background-image: linear-gradient(to right, var(--cor1), var(--cor0), white);
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    text-indent: 5px;
 }
 
-picture {
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    background-color: var(--cor0);
+    color: var(--cor5);
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor4);
+}
+
+main img {
+    width: 100%;
     margin: auto;
 }
 
-img {
-    text-align: center;
-    margin: auto;
-}
-
-.ibagem {
-    text-align: center;
+.img-pq {
+    max-width: 350px; 
+    display: block;
+    margin: auto;   
 }
 
 #video {
     text-align: center;
     background-color: var(--cor5);
     padding: 1em;
+    margin: 0px -16px;
+    padding-bottom: 55.5%;
+    position: relative;   
+}
+
+#video iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
 }
 
 #extra {
     margin: 20px;
-    padding: 0px 0px 10px 0px;
-    background-color: var(--cor0);
+    padding: 10px;
+    background-color: var(--cor1);
     border-radius: 10px;
+    box-shadow: 7px 5px 8px 0px rgba(0, 0, 0, 0.253);
+}
+
+#extra a {
+    background-color: transparent;
 }
 
 #extra > h3{
     border-radius: 10px 10px 0px 0px;
     color: white;
-    font-weight: bold;
-    padding: 10px;
-    background-color: var(--cor3);
+    padding: 8px;
+    margin: -10px -10px 0px -10px;
+    background-color: var(--cor4);
+}
+
+#extra ul {
+    list-style-type: "\2714\00A0\00A0";
+    list-style-position: inside;
+    columns: 2;
 }
 
 footer {
